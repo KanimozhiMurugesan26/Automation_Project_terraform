@@ -24,7 +24,6 @@ resource "azurerm_storage_account" "storage_3837" {
   resource_group_name      = var.resource_group_name
   account_tier             = "Standard"
   account_replication_type = "LRS"
-  allow_blob_public_access = false
 
   tags = var.tags
 }
