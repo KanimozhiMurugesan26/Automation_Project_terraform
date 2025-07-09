@@ -99,7 +99,7 @@ resource "null_resource" "display_linux_vm_hostname" {
   }
 
   provisioner "remote-exec" {
-    inline = ["echo Connected to: $(hostname)]
+    inline = ["echo Connected to: $(hostname)"]
   }
 
   depends_on = [azurerm_linux_virtual_machine.linux_virtual_machine]
